@@ -7,7 +7,7 @@ document.body.addEventListener('keyup', (e) => {
 });
 
 qS('button').addEventListener('click', () => {
-    let song = qS('#input').value;
+    let song = qS('#input').value.toLowerCase();
     let stop = 0;
 
     if(song !== '') {
